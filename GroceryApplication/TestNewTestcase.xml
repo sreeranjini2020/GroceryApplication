@@ -1,0 +1,12 @@
+<suite name="GroceryApplication" >
+	<listeners>
+		<listener class-name="listner.ExtenetReport"></listener>
+	</listeners>
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCase.CategoryPageTest"></class>
+			<!-- <class name="testCase.SubCategoryPageTest"></class>-->
+		</classes>
+	</test>
+</suite>
