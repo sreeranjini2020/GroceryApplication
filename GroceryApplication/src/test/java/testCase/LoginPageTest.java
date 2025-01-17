@@ -15,7 +15,7 @@ public class LoginPageTest extends BaseClass {
 	HomePage hp;
 
 	@Test(priority=1)
-	public void LoginWithValidCredential() throws IOException {
+	public void LoginWithValidCredential() throws Exception {
 		lp = new LoginPage(driver);
 		// hp = new HomePage(driver);
 		//hp = lp.login("admin", "admin");
@@ -30,7 +30,7 @@ public class LoginPageTest extends BaseClass {
 	}
 
 	@Test (priority=2, dataProvider = "data-provider")
-	public void LoginWithInvalidCredential(String username, String password) throws IOException {
+	public void LoginWithInvalidCredential(String username, String password) throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(username, password);
 		String actual = lp.readErrorMessage();

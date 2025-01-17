@@ -1,7 +1,5 @@
 package testCase;
 
-import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,7 @@ public class SubCategoryPageTest extends BaseClass {
 	SubCategoryPage scp;
 
 	@Test(enabled = true)
-	public void verifyAlertMessageOnCreatingNewSubCategory() throws IOException {
+	public void verifyAlertMessageOnCreatingNewSubCategory() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		scp = hp.clickOnSubCatagoryMenu();
@@ -25,7 +23,7 @@ public class SubCategoryPageTest extends BaseClass {
 	}
 
 	@Test(enabled = true)
-	public void verifySubCategorySearchDisplaysCorrectResults() throws IOException {
+	public void verifySubCategorySearchDisplaysCorrectResults() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		scp = hp.clickOnSubCatagoryMenu();
@@ -35,7 +33,7 @@ public class SubCategoryPageTest extends BaseClass {
 	}
 
 	@Test(enabled = true)
-	public void verifyAlertMessageOnChangingStatusOfSelectedSubCategory() throws IOException {
+	public void verifyAlertMessageOnChangingStatusOfSelectedSubCategory() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		scp = hp.clickOnSubCatagoryMenu();
@@ -45,7 +43,7 @@ public class SubCategoryPageTest extends BaseClass {
 	}
 	
 	@Test(enabled = true)
-	public void verifyAlertMessageForEditingSubCategory() throws IOException {
+	public void verifyAlertMessageForEditingSubCategory() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		scp = hp.clickOnSubCatagoryMenu();
@@ -55,7 +53,7 @@ public class SubCategoryPageTest extends BaseClass {
 	}
 	
 	@Test(enabled = true)
-	public void deleteSubCategoryItemAndVerifyItemIsRemoved() throws IOException {
+	public void deleteSubCategoryItemAndVerifyItemIsRemoved() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		scp = hp.clickOnSubCatagoryMenu();

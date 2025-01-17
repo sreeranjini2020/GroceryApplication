@@ -1,6 +1,5 @@
 package testCase;
 
-import java.awt.AWTException;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -19,7 +18,7 @@ public class CategoryPageTest extends BaseClass {
 	CategoryPage cp;
 
 	@Test(enabled = true)
-	public void verifyCreateNewCategory() throws IOException, AWTException {
+	public void verifyCreateNewCategory() throws Exception {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		cp = hp.clickOnCatagoryMenu();
@@ -29,7 +28,7 @@ public class CategoryPageTest extends BaseClass {
 		Assert.assertEquals(alertStatus, true, "Alert message not as expected");
 	}
 	@Test(enabled = false)
-	public void verifySearchSubCategory() throws IOException {
+	public void verifySearchSubCategory() throws IOException, Exception  {
 		lp = new LoginPage(driver);
 		hp = lp.login(groceryApplicationData(1, 1), groceryApplicationData(1, 2));
 		cp = hp.clickOnCatagoryMenu();		

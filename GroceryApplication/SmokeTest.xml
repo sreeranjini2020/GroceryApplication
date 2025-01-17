@@ -1,0 +1,18 @@
+<suite name="GroceryApplication">
+	<listeners>
+		<listener class-name="listner.ExtenetReport"></listener>
+		<listener class-name="listner.RetryListener"></listener>
+	</listeners>
+	<test name="ChromeTest">
+		<groups>
+			<run>
+				<!-- <include name="Smoke"></include>-->
+				<exclude name="Smoke"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCase.ManageNewsTest"></class>
+			<class name="testCase.SubCategoryPageTest"></class>
+		</classes>
+	</test>
+</suite>

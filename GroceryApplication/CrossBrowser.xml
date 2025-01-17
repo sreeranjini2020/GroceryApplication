@@ -6,14 +6,14 @@
 	<test name="ChromeTest">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
-			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.ManageNewsTest"></class>
 			<!-- <class name="testCase.SubCategoryPageTest"></class>-->
 		</classes>
 	</test>
 	<test name="EdgeTest">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
-			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.ManageNewsTest"></class>
 			<!-- <class name="testCase.SubCategoryPageTest"></class>-->
 		</classes>
 	</test>

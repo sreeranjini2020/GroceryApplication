@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EdgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 14 15:17:38 GMT-12:00 2025</td>
+<td>Started on:</td><td>Thu Jan 16 10:20:49 GMT-12:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43899 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44496 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,25 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCase.LoginPageTest.LoginWithInvalidCredential()'><b>LoginWithInvalidCredential</b><br>Test class: testCase.LoginPageTest<br>Parameters: Benita, admin</td>
+<td title='testCase.ManageNewsTest.verifyCreateNewCategory()'><b>verifyCreateNewCategory</b><br>Test class: testCase.ManageNewsTest</td>
 <td></td>
-<td>0</td>
-<td>testCase.LoginPageTest@510f3d34</td></tr>
-<tr>
-<td title='testCase.LoginPageTest.LoginWithInvalidCredential()'><b>LoginWithInvalidCredential</b><br>Test class: testCase.LoginPageTest<br>Parameters: Benita, benita</td>
-<td></td>
-<td>0</td>
-<td>testCase.LoginPageTest@510f3d34</td></tr>
-<tr>
-<td title='testCase.LoginPageTest.LoginWithValidCredential()'><b>LoginWithValidCredential</b><br>Test class: testCase.LoginPageTest</td>
-<td></td>
-<td>2</td>
-<td>testCase.LoginPageTest@510f3d34</td></tr>
-<tr>
-<td title='testCase.LoginPageTest.LoginWithInvalidCredential()'><b>LoginWithInvalidCredential</b><br>Test class: testCase.LoginPageTest<br>Parameters: admin, Benita</td>
-<td></td>
-<td>0</td>
-<td>testCase.LoginPageTest@510f3d34</td></tr>
+<td>26</td>
+<td>testCase.ManageNewsTest@1a677343</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -105,7 +90,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCase.LoginPageTest.LoginWithValidCredential()'><b>LoginWithValidCredential</b><br>Test class: testCase.LoginPageTest</td>
+<td title='testCase.ManageNewsTest.verifyCreateNewCategory()'><b>verifyCreateNewCategory</b><br>Test class: testCase.ManageNewsTest</td>
 <td><div><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
 	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
@@ -115,8 +100,8 @@ function toggleAllBoxes() {
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.readStringData(ExcelUtilities.java:21)
-	at testCase.BaseClass.groceryApplicationData(BaseClass.java:25)
-	at testCase.LoginPageTest.LoginWithValidCredential(LoginPageTest.java:22)
+	at testCase.BaseClass.groceryApplicationData(BaseClass.java:26)
+	at testCase.ManageNewsTest.verifyCreateNewCategory(ManageNewsTest.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -126,8 +111,8 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X0
 	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
 	... 31 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528399580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace528399580'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1911775740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911775740'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
 	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
 	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
@@ -136,8 +121,8 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X0
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.readStringData(ExcelUtilities.java:21)
-	at testCase.BaseClass.groceryApplicationData(BaseClass.java:25)
-	at testCase.LoginPageTest.LoginWithValidCredential(LoginPageTest.java:22)
+	at testCase.BaseClass.groceryApplicationData(BaseClass.java:26)
+	at testCase.ManageNewsTest.verifyCreateNewCategory(ManageNewsTest.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,8 +150,8 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0X0
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
 	... 31 more
 </pre></div></td>
-<td>0</td>
-<td>testCase.LoginPageTest@510f3d34</td></tr>
+<td>1</td>
+<td>testCase.ManageNewsTest@1a677343</td></tr>
 </table><p>
 </body>
 </html>

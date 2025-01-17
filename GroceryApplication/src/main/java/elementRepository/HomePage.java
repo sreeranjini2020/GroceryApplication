@@ -23,6 +23,8 @@ public class HomePage {
 	WebElement subCatagoryMenu;
 	@FindBy(xpath="//p[text()='Manage Contact']")
 	WebElement manageContactMenu;
+	@FindBy(xpath="//p[text()='Manage News']")
+	WebElement manageNewsMenu;
 	
 	
 	public String getHomePageHeading() {
@@ -42,6 +44,10 @@ public class HomePage {
 	public ManageContactPage clickOnManageContactMenu() {
 		manageContactMenu.click();
 		return new ManageContactPage(driver);
+	}
+	public ManageNewsPage clickOnManageNewsMenu() {
+		manageNewsMenu.click();
+		return new ManageNewsPage(driver);
 	}
 	
 

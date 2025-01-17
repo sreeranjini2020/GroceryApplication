@@ -5,9 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.EncryptDecryptUtility;
+import utilities.GeneralUtilities;
+
 public class LoginPage {
 
 	WebDriver driver;// instance variable
+	EncryptDecryptUtility edu = new EncryptDecryptUtility();
 
 	// create a constructor
 	public LoginPage(WebDriver driver) {
@@ -28,7 +32,7 @@ public class LoginPage {
 	
 	
     //function
-	public HomePage login(String userName, String password) {
+	public HomePage login(String userName, String password) {		
 		userNameField.sendKeys(userName);
 		passwordField.sendKeys(password);
 		signInButton.click();
@@ -38,5 +42,11 @@ public class LoginPage {
 	public String readErrorMessage() {
 		return errorMessage.getText();
 	}
+	
+	public String decryptPassword(String password) throws Exception{
+		return EncryptDecryptUtility.decrypt(password, "1234567890123456");				
+		//String decrptPassword = edu.decrypt(password, "1234567890123456");
+		//return decrptPassword;				
+		}
 
 }

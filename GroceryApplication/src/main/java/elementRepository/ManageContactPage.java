@@ -20,12 +20,19 @@ public class ManageContactPage {
 	WebElement editButton;
 	@FindBy(id = "phone")
 	WebElement phoneNumberField;
+	@FindBy(name = "Update")
+	WebElement updateButton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	WebElement alertMessage;
 	
 	public void editContact(String phone) {
 		editButton.click();
-		phoneNumberField.clear();
-		//gu.blurThePlaceHolder(driver, phoneNumberField);
+		phoneNumberField.clear();		
 		phoneNumberField.sendKeys(phone);
+		gu.clickJavaScriptExecutor(driver, updateButton);
+	}
+	public String getAlertMessage() {
+		return alertMessage.getText();
 	}
 
 

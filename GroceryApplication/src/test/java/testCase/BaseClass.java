@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import utilities.EncryptDecryptUtility;
 import utilities.ExcelUtilities;
 import utilities.ScreenShotCapture;
 
@@ -27,7 +28,7 @@ public class BaseClass {
 		return data;
 		// C:\Users\minnu\eclipse-workspace\GroceryApplication=System.getProperty("user.dir")
 		// C:\Users\minnu\eclipse-workspace\GroceryApplication\src\main\resources\Excel\loginCredientials.xlsx
-	}
+	}	
 
 	public static void testBasic() throws IOException {
 
@@ -49,7 +50,7 @@ public class BaseClass {
 		// driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.get(pro.getProperty("BaseUrl"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));// Polymorphism
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));// Polymorphism- method overloading
 	}
 
 	@AfterMethod(alwaysRun = true)
