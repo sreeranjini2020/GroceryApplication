@@ -3,7 +3,7 @@
 **GroceryApplication** is an automated testing framework designed to validate the functionality of a web-based grocery application. The project uses **Selenium WebDriver**, **TestNG**, and **Maven** to support efficient, maintainable, and cross-browser test execution.
 
 
-## 📌 Overview
+##  Overview
 
 This framework demonstrates:
 - **Cross-browser testing**
